@@ -1,0 +1,111 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #404142;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  background-color: #f0e68c;
+  /* Changed background color to a light yellow */
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: -0.1px;
+  opacity: 0.7;
+}
+
+h5 {
+  font-weight: 900;
+  text-align: center;
+  font-size: larger;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+.main {
+  text-align: center;
+}
+
+#header {
+  font-size: 50px;
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(to right, rgba(231, 159, 37, 1), rgb(26, 23, 23), green);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.feed {
+  text-align: left;
+  width: 85%;
+
+  transition: all 0.3s;
+  margin-right: 20px;
+  border: 3px solid linear-gradient(to right, rgba(231, 159, 37, 1), rgb(26, 23, 23), green);
+  border-radius: 5px;
+  background-color: white;
+  margin: 10px auto;
+  padding: 25px;
+  box-shadow: 13px 3px 10px rgba(18, 19, 18, 0.5);
+  /* Added box shadow */
+}
+
+.feed:hover {
+  box-shadow: 3px 3px 10px #ccc;
+  transform: translateY(-10px);
+}
+
+.feed ul li a {
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: 700;
+}
+
+/* Custom Media Queries */
+
+/* Mobile */
+@media (max-width: 320px) {
+  .main .feed {
+    width: 100%;
+  }
+}
+
+/* iPad Portrait */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main .feed {
+    width: 49%;
+    margin-right: 7px;
+  }
+}
+
+/* iPad Landscape */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main .feed {
+    width: 49%;
+    margin-right: 9px;
+  }
+}
+
+/* Footer style */
+footer {
+  background-color: rgba(231, 159, 37, 1);
+  /* Added footer background color */
+  color: white;
+  /* Changed footer text color to white */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  /* Ensure footer stays on top */
+}

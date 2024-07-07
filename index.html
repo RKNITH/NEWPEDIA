@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=UTF-8" name="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEWSPEDIA</title>
+    <meta name="author" content="Sonu kumar kushwaha">
+    <meta name="email" content="flyingsonu736@gmail.com">
+    <meta name="description"
+        content="Get the latest news from India and world with News On AIR. Find all news related covid 19 in india, coronavirus news update, breaking news, Politics news, Sports news, Business news, Arts and Entertainment news.">
+    <meta name="keywords"
+        content="coronavirus india, covid 19 india, coronavirus outbreak, coronavirus update with AIR news, breaking news, latest news, indian news, daily news, live news, news in india, online news, national news online,state news online, International news online, sports news online,business news online,current news,indian newspaper news,today news,world news, air news, English news, Hindi news, Urdu news, Sanskrit news, Punjabi news, Assamese news, Bengali news, Dogri news, Gujrati news, Kannada news, Kashmiri news, Malayalam news, Marathi news, Nepali news, Oriya news, Tamil news, Telegu news, Bhojpuri news, Lepcha news, Bhutia news, Arunachali news, newsonair news,all india radio news, regional news,Hindi News, Election Result, Election News, Chunav Samachar, MadhyaPradesh Result, Rajasthan Result, Chhattisgarh Result, Telangana Result, Mizoram Result,Poll with Air,live counting,assembly election results 2018">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <br>
+    <div class="main" id="main">
+        <h3 id="header"> NEWSPEDIA </h3>
+        <h4 id="date"></h4>
+    </div>
+    <br><br><br>
+    <center>
+        <div id="feed-textarea" class="feed">
+            <ul></ul>
+        </div>
+    </center>
+    <br><br><br>
+
+    <div class="main">
+        <h3></h3>
+    </div>
+
+    <!-- Copyright notice and dynamic year -->
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> All rights reserved. | Created by Raviranjan</p>
+    </footer>
+
+    <script src="https://storage.googleapis.com/feednami-static/js/feednami-client-v1.0.1.js"></script>
+    <script src="./news.js"></script>
+
+    <script>
+        // Update dynamic year
+        document.getElementById("copyright-year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
